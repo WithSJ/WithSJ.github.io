@@ -1,28 +1,58 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>SJ | Game Designer & Developer</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>withsj – Game Developer Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <header>
-    <h1>SJ</h1>
-    <p>Game Designer & Developer</p>
-    <a href="https://github.com/WithSJ" target="_blank">GitHub Profile</a>
+  <nav class="navbar">
+    <div class="nav-brand">withsj</div>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html" class="active">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="blog.html">Blog</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <button class="nav-toggle" onclick="toggleNav()">☰</button>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-text">
+      <h1>Hi, I'm <span class="highlight">Sandeep Jadam</span></h1>
+      <p>Game Designer & Developer | 3D Artist | Programmer</p>
+    </div>
   </header>
-  <section>
-    <h2>Projects</h2>
-    <ul>
-      <li>🎮 Project 1 - Godot Platformer</li>
-      <li>🧠 Project 2 - Puzzle Game Concept</li>
-      <li>🔥 Project 3 - Unreal Test Scene</li>
+
+  <section class="section about">
+    <h2>About Me</h2>
+    <p>I'm passionate about crafting immersive game experiences using Godot, Python, and Blender. I share my learning on Reddit and LinkedIn and contribute to open-source projects on GitHub.</p>
+  </section>
+
+  <section class="section skills">
+    <h2>Skills</h2>
+    <ul class="skill-list">
+      <li>Godot Engine (2D/3D)</li>
+      <li>Python, C++, GDScript</li>
+      <li>Blender 3D, UI/UX Design</li>
+      <li>Kivy, HTML/CSS/JS</li>
     </ul>
   </section>
+
+  <section class="section contact" id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:withsj@example.com">withsj@example.com</a></p>
+    <p>
+      <a href="https://github.com/WithSJ" target="_blank">GitHub</a> |
+      <a href="https://linkedin.com/in/withsj" target="_blank">LinkedIn</a> |
+      <a href="https://reddit.com/user/withsj" target="_blank">Reddit</a>
+    </p>
+  </section>
+
   <footer>
-    <p>© 2025 SJ. All rights reserved.</p>
+    <p>&copy; 2025 withsj (Sandeep Jadam)</p>
   </footer>
 </body>
 </html>
